@@ -73,6 +73,13 @@ After finishing your required elements, you can push your work further. These go
 ## Stretch Interview Questions
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React JS is a JavaScript library that helps you build user interfaces for web applications. It simplifies the process of creating interactive and dynamic interfaces by allowing you to create reusable components.
+
 1. Describe component state.
+When working with React, you often need to manage and update data within a component. Component state provides a way to store and manage this data. It allows you to keep track of information that can change over time, like user input or data fetched from APIs.
+
 1. Describe props.
+Props, short for properties, are a way to pass data from a parent component to its child components. They allow you to customize and configure child components by providing them with data or functionality. 
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+In React, side effects refer to any additional operations or actions that are not directly related to rendering components. This can include tasks like fetching data from an API, subscribing to events, or manually manipulating the DOM.

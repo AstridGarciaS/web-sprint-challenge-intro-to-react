@@ -2,16 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
 import Character from './components/Character';
-import styled from 'styled-components';
-
-const StyledApp = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  text-align: left;
-  align-items: center;
-  justify-content: space-around;
-  width: 60%;
-`;
 
 
 const App = () => {
@@ -41,13 +31,12 @@ const App = () => {
       hairColor={character.hair_color}
       skinColor={character.skin_color}
     />
+    
   ));
   
-  
-
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">React Wars</h1>
       {characterComponents}
     </div>
   );

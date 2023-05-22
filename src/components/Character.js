@@ -1,6 +1,6 @@
 // Write your Character component here
-import React from "react";
 import styled from "styled-components";
+import React from "react";
 
 
 const CharacterContainer = styled.div`
@@ -13,18 +13,19 @@ const CharacterName = styled.h2`
   color: white;
 `;
 
-function Character(props) {
+
+const Character = (props) => {
     const {name, height, mass, hairColor, skinColor } = props
-
-
 
 return (
     <div className='character'>
-         <h2>{name}</h2>
-         <h3>{height}</h3>
-         <h3>{mass}</h3>
-         <h3>{hairColor}</h3>
-         <h3>{skinColor}</h3>    
+         <h2>{props.name}</h2>
+         <div className="subInformation">
+          <p>{props.height}</p>
+          <p>{props.mass}</p>
+          <p>{props.hairColor}</p>
+          <p>{props.skinColor}</p>   
+          </div>
     </div>
 );
 }
