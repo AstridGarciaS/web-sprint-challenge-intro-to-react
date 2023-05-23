@@ -5,28 +5,21 @@ import React from "react";
 
 const CharacterContainer = styled.div`
 background-color: white;
-padding: 10px;
+padding: 1px;
 margin-bottom: 10px;
-`;
-
-const CharacterName = styled.h2`
-  color: white;
+color: white;
 `;
 
 
 const Character = (props) => {
-    const {name, height, mass, hairColor, skinColor } = props
+    const {name} = props
 
+    
 return (
     <div className='character'>
          <h2>{props.name}</h2>
-         <div className="subInformation">
-          <p>{props.height}</p>
-          <p>{props.mass}</p>
-          <p>{props.hairColor}</p>
-          <p>{props.skinColor}</p>   
-          </div>
     </div>
+
 );
 }
 

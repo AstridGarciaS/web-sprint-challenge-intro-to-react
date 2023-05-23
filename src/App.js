@@ -21,23 +21,13 @@ const App = () => {
       })
   }, []);
 
-  console.log(StarWarsData);
 
-  const characterComponents  = StarWarsData.map(character => (
-    <Character
-      name={character.name}
-      height={character.height}
-      mass={character.mass}
-      hairColor={character.hair_color}
-      skinColor={character.skin_color}
-    />
-    
-  ));
-  
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {characterComponents}
+      {StarWarsData.map(character => {
+        return <Character name={character.name} />
+      })}
     </div>
   );
 }
